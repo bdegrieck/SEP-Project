@@ -1,14 +1,156 @@
 import Course.Course;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class App {
     public static void main(String[] args) throws Exception {
 
-        int courseNum = 0;
-        String courseName = "";
+        Course[] bioengineeringReq = new Course[40];
+        Course[] computerengineeringReq = new Course[60];
 
+        // bioengineering - Ben
+
+        // math and science requirements
+        bioengineeringReq[0] = new Course("MTH", 1554);
+        bioengineeringReq[1] = new Course("MTH", 1555);
+        bioengineeringReq[2] = new Course("APM", 2555);
+        bioengineeringReq[3] = new Course("MTH", 2554);
+        bioengineeringReq[4] = new Course("BIO", 1200);
+        bioengineeringReq[5] = new Course("BIO", 1201);
+        bioengineeringReq[6] = new Course("BIO", 2600);
+        bioengineeringReq[7] = new Course("BIO", 3621);
+        bioengineeringReq[8] = new Course("PHY", 1610);
+        bioengineeringReq[8] = new Course("PHY", 1620);
+        bioengineeringReq[9] = new Course("PHY", 3250);
+        bioengineeringReq[10] = new Course("CHM", 1440);
+        bioengineeringReq[11] = new Course("CHM", 1450);
+        bioengineeringReq[12] = new Course("CHM", 2340);
+
+        // Engineering Core
+        bioengineeringReq[13] = new Course("EGR", 1200);
+        bioengineeringReq[14] = new Course("EGR", 1400);
+        bioengineeringReq[15] = new Course("EGR", 2400);
+        bioengineeringReq[16] = new Course("EGR", 2500);
+        bioengineeringReq[17] = new Course("EGR", 2600);
+        bioengineeringReq[18] = new Course("EGR", 2800);
+
+        // Required Professional Subjects
+        bioengineeringReq[19] = new Course("BE", 3150);
+        bioengineeringReq[20] = new Course("BE", 3899);
+        bioengineeringReq[21] = new Course("BE", 4999);
+
+        // Tracks
+
+        // Track 1
+        bioengineeringReq[22] = new Course("BE", 4100);
+        bioengineeringReq[23] = new Course("BE", 4110);
+        bioengineeringReq[24] = new Course("BE", 4120);
+        bioengineeringReq[25] = new Course("PHY", 3260);
+
+        // Track 2
+        bioengineeringReq[26] = new Course("BE", 4200);
+        bioengineeringReq[27] = new Course("BIO", 4412);
+        bioengineeringReq[28] = new Course("CSI", 3450);
+        bioengineeringReq[29] = new Course("CSI", 4780);
+
+        // Track 3
+        bioengineeringReq[30] = new Course("BE", 4300);
+        bioengineeringReq[31] = new Course("BIO", 3500);
+        bioengineeringReq[32] = new Course("BIO", 4550);
+        bioengineeringReq[33] = new Course("ME", 3500);
+
+        // Track 4
+        bioengineeringReq[34] = new Course("BE", 4400);
+        bioengineeringReq[35] = new Course("BIO", 3142);
+        bioengineeringReq[36] = new Course("ME", 3250);
+        bioengineeringReq[37] = new Course("ME", 4210);
+        bioengineeringReq[38] = new Course("BE", 4900);
+        bioengineeringReq[39] = new Course("BE", 4996);
+        bioengineeringReq[40] = new Course("BE", 4998);
+
+        // Computer Engineering - ben
+
+        // math and science requirements
+        computerengineeringReq[0] = new Course("MTH", 1554);
+        computerengineeringReq[1] = new Course("MTH", 1555);
+        computerengineeringReq[2] = new Course("APM", 2555);
+        computerengineeringReq[3] = new Course("APM", 2663);
+        computerengineeringReq[4] = new Course("CHM", 1430);
+        computerengineeringReq[5] = new Course("PHY", 1610);
+        computerengineeringReq[6] = new Course("PHY", 1620);
+
+        // Electives
+        computerengineeringReq[7] = new Course("APM", 3332);
+        computerengineeringReq[8] = new Course("APM", 3557);
+        computerengineeringReq[9] = new Course("APM", 4333);
+        computerengineeringReq[10] = new Course("APM", 4334);
+        computerengineeringReq[11] = new Course("APM", 4663);
+        computerengineeringReq[12] = new Course("APM", 4777);
+        computerengineeringReq[13] = new Course("BIO", 1200);
+        computerengineeringReq[14] = new Course("CHM", 1450);
+        computerengineeringReq[14] = new Course("CHM", 1480);
+        computerengineeringReq[15] = new Course("MOR", 2442);
+        computerengineeringReq[16] = new Course("MTH", 2554);
+        computerengineeringReq[17] = new Course("MTH", 2775);
+        computerengineeringReq[18] = new Course("MTH", 3552);
+        computerengineeringReq[19] = new Course("PHY", 3250);
+        computerengineeringReq[20] = new Course("PHY", 3260);
+        computerengineeringReq[21] = new Course("PHY", 3310);
+        computerengineeringReq[22] = new Course("PHY", 3660);
+        computerengineeringReq[23] = new Course("PHY", 3710);
+
+        // Engineering Core
+        computerengineeringReq[24] = new Course("EGR", 1200);
+        computerengineeringReq[25] = new Course("EGR", 1400);
+        computerengineeringReq[26] = new Course("EGR", 2400);
+        computerengineeringReq[27] = new Course("EGR", 2500);
+        computerengineeringReq[28] = new Course("EGR", 2600);
+        computerengineeringReq[29] = new Course("EGR", 2800);
+
+        // Required Profession Subjects
+        computerengineeringReq[30] = new Course("CSI", 2290);
+        computerengineeringReq[31] = new Course("ECE", 2005);
+        computerengineeringReq[32] = new Course("ECE", 2700);
+        computerengineeringReq[33] = new Course("ECE", 3100);
+        computerengineeringReq[34] = new Course("ECE", 3204);
+        computerengineeringReq[35] = new Course("ECE", 3720);
+        computerengineeringReq[36] = new Course("ECE", 4710);
+        computerengineeringReq[37] = new Course("ECE", 4721);
+        computerengineeringReq[38] = new Course("ECE", 4999);
+
+        // Professional Tracks
+
+        // Computers and Algorithms choose one
+        computerengineeringReq[39] = new Course("CSI", 3610);
+        computerengineeringReq[40] = new Course("CSI", 3640);
+        computerengineeringReq[41] = new Course("ECE", 4772);
+
+        // track 1
+        computerengineeringReq[42] = new Course("ECE", 3300);
+        computerengineeringReq[43] = new Course("ECE", 4210);
+        computerengineeringReq[44] = new Course("ECE", 4230);
+        computerengineeringReq[45] = new Course("ECE", 4310);
+
+        // track 2
+        computerengineeringReq[46] = new Course("ECE", 3105);
+        computerengineeringReq[47] = new Course("ECE", 4130);
+        computerengineeringReq[48] = new Course("ECE", 4132);
+        computerengineeringReq[49] = new Course("ECE", 4135);
+
+        // track 3
+        computerengineeringReq[50] = new Course("ECE", 3600);
+        computerengineeringReq[51] = new Course("ECE", 4400);
+        computerengineeringReq[52] = new Course("ECE", 4415);
+        computerengineeringReq[53] = new Course("ECE", 4520);
+
+        // track 4
+        computerengineeringReq[54] = new Course("CSI", 3370);
+        computerengineeringReq[55] = new Course("CSI", 3450);
+        computerengineeringReq[56] = new Course("CSI", 3610);
+        computerengineeringReq[57] = new Course("CSI", 4240);
+        computerengineeringReq[58] = new Course("CSI", 4480);
+        computerengineeringReq[59] = new Course("CSI", 4500);
+        computerengineeringReq[60] = new Course("CSI", 5490);
+
+<<<<<<< Updated upstream
         Course[] bioengineeringReq = new Course[50];
         bioengineeringReq[0] = new Course("APM", 2663);
         
@@ -225,6 +367,8 @@ public class App {
             indSysEngReq[66] = new Course("ME", 3700);
             indSysEngReq[67] = new Course("HRD", 4600);
               
+=======
+>>>>>>> Stashed changes
     }
 
 }
