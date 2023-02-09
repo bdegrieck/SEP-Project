@@ -149,10 +149,6 @@ public class App {
         computerengineeringReq[58] = new Course("CSI", 4480);
         computerengineeringReq[59] = new Course("CSI", 4500);
         computerengineeringReq[60] = new Course("CSI", 5490);
-
-<<<<<<< Updated upstream
-        Course[] bioengineeringReq = new Course[50];
-        bioengineeringReq[0] = new Course("APM", 2663);
         
         // Engineering Chemistry Requirements
         Course[] engChemReq = new Course[100];
