@@ -12,6 +12,7 @@ public class App {
         Course[] bioengineeringReq = new Course[50];
         bioengineeringReq[0] = new Course("APM", 2663);
         
+        // Engineering Chemistry Requirements
         Course[] engChemReq = new Course[100];
         
         engChemReq[0] = new Course("MTH", 1554);
@@ -58,6 +59,7 @@ public class App {
         engChemReq[32] = new Course("ECE", 4400);
         
         
+        // Engineering Physics Requirements
         Course[] engPhyReq = new Course[100];
         
         engPhyReq[0] = new Course("MTH", 1554);
@@ -137,6 +139,7 @@ public class App {
         // one 4000 ECE, ME, or ISE
         
         
+        // Industrial Systems Engineering Requirements
         Course[] indSysEngReq = new Course[100];
         
         indSysEngReq[0] = new Course("MTH", 1554);
