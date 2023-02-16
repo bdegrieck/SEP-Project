@@ -432,5 +432,184 @@ public class App {
         MechEngReq[30] = new Course("ME", 0000); // ME Professional Elective
         MechEngReq[31] = new Course("PHL", 1310);
 
+        Course[] electricalReq = new Course[50];
+        //Approved MTH and Science courses
+        electricalReq[1] = new Course("MTH", 1554);
+        electricalReq[2] = new Course("MTH", 1555);
+        electricalReq[3] = new Course("APM", 2555);
+        electricalReq[4] = new Course("MTH", 2554);
+        electricalReq[5] = new Course("CHM", 1430);
+        electricalReq[6] = new Course("PHY", 1610);
+        electricalReq[7] = new Course("PHY", 1620);
+
+
+        //Pick Approved MTH/Science class
+        electricalReq[8] = new Course("APM", 2663);
+        electricalReq[9] = new Course("APM", 3332);
+        electricalReq[10] = new Course("APM", 3557);
+        electricalReq[11] = new Course("APM", 4333);
+        electricalReq[12] = new Course("APM", 4334);
+        electricalReq[13] = new Course("APM", 4555);
+        electricalReq[14] = new Course("APM", 4663);
+        electricalReq[15] = new Course("APM", 4777);
+        electricalReq[16] = new Course("BIO", 1200);
+        electricalReq[17] = new Course("BIO", 3400);
+        electricalReq[18] = new Course("BIO", 3220);
+        electricalReq[19] = new Course("BIO", 4412);
+        electricalReq[20] = new Course("CHM", 1450);
+        electricalReq[21] = new Course("MTH", 3552);
+        electricalReq[22] = new Course("PHY", 3250);
+        electricalReq[23] = new Course("PHY", 3310);
+        electricalReq[24] = new Course("PHY", 3610);
+        electricalReq[25] = new Course("PHY", 3660);
+        electricalReq[26] = new Course("PHY", 3710);
+        electricalReq[27] = new Course("PHY", 4310);
+
+        //ENG Core
+        electricalReq[28] = new Course("EGR", 1200);
+        electricalReq[29] = new Course("EGR", 1400);
+        electricalReq[30] = new Course("EGR", 2500);
+        electricalReq[31] = new Course("EGR", 2600);
+        electricalReq[32] = new Course("EGR", 2800);
+
+        //Required Professional Subjects
+        electricalReq[33] = new Course("ECE", 2005);
+        electricalReq[34] = new Course("ECE", 2700);
+        electricalReq[35] = new Course("ECE", 3105);
+        electricalReq[36] = new Course("ECE", 3204);
+        electricalReq[37] = new Course("ECE", 3300);
+        electricalReq[38] = new Course("ECE", 3600);
+        electricalReq[39] = new Course("ECE", 4999);
+
+        //Professional Depth Area's
+        //Communications Track
+        electricalReq[40] = new Course("ECE", 4210);
+        electricalReq[41] = new Course("ECE", 4220);
+        electricalReq[42] = new Course("ECE", 4230);
+
+        //Computer Engineering Track
+        electricalReq[43] = new Course("ECE", 3720);
+        electricalReq[44] = new Course("ECE", 4710);
+        electricalReq[45] = new Course("ECE", 4721);
+        electricalReq[46] = new Course("ECE", 4772);
+
+        //Control Systems Track
+        electricalReq[47] = new Course("ECE", 4400);
+        electricalReq[48] = new Course("ECE", 4410);
+        electricalReq[49] = new Course("ECE", 4415);
+
+        //Electromagnetics Track
+        electricalReq[50] = new Course("ECE", 4305);
+        electricalReq[51] = new Course("ECE", 4310);
+        electricalReq[52] = new Course("ECE", 4320);
+
+        //Electronics Track
+        electricalReq[53] = new Course("ECE", 4132);
+        electricalReq[54] = new Course("ECE", 4130);
+        electricalReq[55] = new Course("ECE", 4135);
+
+        //Robotics Track
+        electricalReq[56] = new Course("ECE", 4500);
+        electricalReq[57] = new Course("ECE", 4510);
+        electricalReq[58] = new Course("ECE", 4520);
+        electricalReq[59] = new Course("ECE", 4551);
+
+        //Power Systems Track
+        electricalReq[60] = new Course("ECE", 4610);
+        electricalReq[61] = new Course("ECE", 4620);
+        electricalReq[62] = new Course("ECE", 4630);
+
+        Course[] computerReq = new Course[50];
+        //Mathematics and Science
+        computerReq[0] = new Course("MTH", 1554);
+        computerReq[1] = new Course("MTH", 1555);
+        computerReq[2] = new Course("MTH", 2775);
+        computerReq[3] = new Course("APM", 2663);
+        computerReq[4] = new Course("STA", 2226);
+
+        //Bio and Lab
+        computerReq[5] = new Course("BIO", 1200);
+        computerReq[6] = new Course("BIO", 1201);
+
+        //Chm and Lab
+        computerReq[7] = new Course("CHM", 1440);
+        computerReq[8] = new Course("CHM", 1470);
+
+        //Phy and Lab
+        computerReq[9] = new Course("PHY", 1510);
+        computerReq[10] = new Course("PHY", 1100);
+
+        computerReq[11] = new Course("CHM", 1430);
+        computerReq[12] = new Course("PHY", 1610);
+        computerReq[13] = new Course("PHY", 1620);
+
+        //Computer Sciece Core
+        computerReq[14] = new Course("CSI", 1420);
+        computerReq[15] = new Course("CSI", 2300);
+        computerReq[16] = new Course("CSI", 2310);
+        computerReq[17] = new Course("CSI", 2470);
+        computerReq[18] = new Course("CSI", 2999);
+
+        //Professional Subjects
+        computerReq[19] = new Course("CSI", 3370);
+        computerReq[20] = new Course("CSI", 3430);
+        computerReq[21] = new Course("CSI", 3450);
+        computerReq[22] = new Course("CSI", 3610);
+        computerReq[23] = new Course("CSI", 3640);
+        computerReq[24] = new Course("CSI", 3450);
+        computerReq[25] = new Course("CSI", 4480);
+        computerReq[26] = new Course("CSI", 4500);
+        computerReq[27] = new Course("CSI", 4650);
+        computerReq[28] = new Course("CSI", 4999);
+
+        //Computational Intelligence Track
+        computerReq[29] = new Course("CSI", 4130);
+        computerReq[30] = new Course("CSI", 4810);
+
+        //System Administration Track
+        computerReq[31] = new Course("CSI", 3660);
+        computerReq[32] = new Course("CSI", 4660);
+
+        //Bioinformatics Track
+        computerReq[33] = new Course("BIO", 3400);
+        computerReq[34] = new Course("CSI", 4780);
+
+        //Cybersecurity Track
+        computerReq[35] = new Course("CSI", 4460);
+        computerReq[36] = new Course("CSI", 4700);
+        computerReq[37] = new Course("APM", 4347);
+
+        //Game Development Track
+        computerReq[38] = new Course("CSI", 3380);
+        computerReq[39] = new Course("CSI", 4380);
+
+        //Mobile Applications Development Track
+        computerReq[40] = new Course("CSI", 3150);
+        computerReq[41] = new Course("CSI", 4230);
+
+        //Web Development Track
+        computerReq[42] = new Course("CSI", 3150);
+        computerReq[43] = new Course("CSI", 4160);
+
+        //Take 5 credits from the followng courses
+        computerReq[44] = new Course("CSI", 2320);
+        computerReq[45] = new Course("CSI", 2330);
+        computerReq[46] = new Course("CSI", 2340);
+        computerReq[47] = new Course("CSI", 2350);
+        computerReq[48] = new Course("APM", 2555);
+        computerReq[49] = new Course("APM", 3332);
+        computerReq[50] = new Course("APM", 4333);
+        computerReq[51] = new Course("APM", 4334);
+        computerReq[52] = new Course("APM", 4663);
+        computerReq[53] = new Course("APM", 4777);
+        computerReq[54] = new Course("EGR", 2400);
+        computerReq[55] = new Course("MTH", 3552);
+        computerReq[56] = new Course("MOR", 2442);
+        computerReq[57] = new Course("PHY", 1110);
+        computerReq[58] = new Course("PHY", 3250);
+        computerReq[59] = new Course("PHY", 3260);
+        computerReq[60] = new Course("PHY", 3310);
+        computerReq[61] = new Course("PHY", 3660);
+        computerReq[62] = new Course("PHY", 3710);
     }
 }
